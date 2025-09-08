@@ -27,4 +27,7 @@ document.addEventListener('DOMContentLoaded', function(){
             document.body.classList.toggle('alto-contraste')
         })
 
+        const botaoSelecionado = botaoAcessibilidade.getAttribute('aria-expanded') === 'true';
+            botaoAcessibilidade.setAttribute('aria-expanded', !botaoSelecionado);
+
 })
